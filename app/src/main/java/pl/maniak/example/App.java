@@ -2,12 +2,18 @@ package pl.maniak.example;
 
 
 import android.app.Application;
+import android.support.v7.app.AppCompatDelegate;
 
 import pl.maniak.example.util.injection.AppComponent;
 import pl.maniak.example.util.injection.AppModule;
 import pl.maniak.example.util.injection.DaggerAppComponent;
 
 public class App extends Application {
+
+    static {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO);
+    }
+
     private static App instance = new App();
     private static AppComponent appComponent;
 

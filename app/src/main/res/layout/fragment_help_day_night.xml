@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/FragmentHeader"
+        android:text="@string/help_day_night_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/status_mode"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonAutoMode"
+            style="@style/Button"
+            android:text="@string/help_day_night_button_auto_mode" />
+
+        <Button
+            android:id="@+id/buttonDayMode"
+            style="@style/Button"
+            android:layout_below="@+id/buttonAutoMode"
+            android:text="@string/help_day_night_button_day_mode" />
+
+        <Button
+            android:id="@+id/buttonNightMode"
+            style="@style/Button"
+            android:layout_below="@+id/buttonDayMode"
+            android:text="@string/help_day_night_button_night_mode" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/day_night" />
+</LinearLayout>

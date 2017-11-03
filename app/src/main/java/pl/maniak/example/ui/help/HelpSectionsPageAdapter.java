@@ -5,9 +5,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import pl.maniak.example.ui.help.fragment.HelpDayNightFragment;
 import pl.maniak.example.ui.help.fragment.HelpMainFragment;
 
-public class HelpSectionsPageAdapter extends FragmentPagerAdapter{
+public class HelpSectionsPageAdapter extends FragmentPagerAdapter {
 
     public HelpSectionsPageAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
@@ -17,21 +18,24 @@ public class HelpSectionsPageAdapter extends FragmentPagerAdapter{
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                default:
-                    return new HelpMainFragment();
+                return new HelpMainFragment();
+            default:
+                return new HelpDayNightFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 1;
+        return 2;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position) {
+            case 0:
+                return "Help Main";
             default:
-                return "HelpMain";
+                return "Day Night Theme";
         }
     }
 }

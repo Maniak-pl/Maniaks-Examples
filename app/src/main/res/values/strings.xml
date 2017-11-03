@@ -6,6 +6,12 @@
 
     <string name="action_settings">Settings</string>
 
+    // Help
     <string name="help_main_header">Help Main</string>
     <string name="help_main_description">Examples that will help me solve problems in other applications.</string>
+    <string name="help_day_night_header">DayNight Theme</string>
+    <string name="status_mode">Default Mode Type: Day</string>
+    <string name="help_day_night_button_auto_mode">Auto Mode</string>
+    <string name="help_day_night_button_day_mode">Day Mode</string>
+    <string name="help_day_night_button_night_mode">Night Mode</string>
 </resources>

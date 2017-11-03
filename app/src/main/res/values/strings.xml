@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Maniak\'s Examples</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="help_main_header">Help Main</string>
+    <string name="help_main_description">Examples that will help me solve problems in other applications.</string>
+</resources>

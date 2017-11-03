@@ -1,25 +1,16 @@
 package pl.maniak.example.ui.help.fragment;
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatDelegate;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pl.maniak.example.R;
-import pl.maniak.example.util.log.L;
+import pl.maniak.example.ui.BaseFragment;
 
-public class HelpDayNightFragment extends Fragment {
+public class HelpDayNightFragment extends BaseFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        L.i("HelpDayNightFragment.onCreateView() ");
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_help_day_night, null);
-        ButterKnife.bind(this, root);
-        return root;
+    protected int getLayoutId() {
+        return R.layout.fragment_help_day_night;
     }
 
     @OnClick(R.id.buttonAutoMode)

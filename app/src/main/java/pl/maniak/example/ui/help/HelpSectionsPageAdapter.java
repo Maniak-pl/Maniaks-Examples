@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import pl.maniak.example.ui.help.fragment.HelpDayNightFragment;
+import pl.maniak.example.ui.help.fragment.HelpLightSensorFragment;
 import pl.maniak.example.ui.help.fragment.HelpMainFragment;
 
 public class HelpSectionsPageAdapter extends FragmentPagerAdapter {
@@ -19,14 +20,17 @@ public class HelpSectionsPageAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new HelpMainFragment();
-            default:
+            case 1:
                 return new HelpDayNightFragment();
+            default:
+                return new HelpLightSensorFragment();
         }
+
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -34,8 +38,10 @@ public class HelpSectionsPageAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return "Help Main";
-            default:
+            case 1:
                 return "Day Night Theme";
+            default:
+                return "Light Sensor";
         }
     }
 }

@@ -14,4 +14,5 @@
     <string name="help_day_night_button_auto_mode">Auto Mode</string>
     <string name="help_day_night_button_day_mode">Day Mode</string>
     <string name="help_day_night_button_night_mode">Night Mode</string>
+    <string name="help_light_sensor_header">Light Sensor</string>
 </resources>
